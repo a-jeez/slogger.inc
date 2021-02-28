@@ -6,7 +6,9 @@ Simple include log for sa-mp server.
 * Remove Logs
 ## Example
 ---------------------------------
-```CMD:givemoney(playerid, params[])
+```php
+
+CMD:givemoney(playerid, params[])
 {
 		new string[128], giveplayerid, money;
 		if(sscanf(params, "ud", giveplayerid, money)) return SendClientMessage(playerid, -1, " /givemoney [playerid] [money]");
@@ -18,4 +20,5 @@ Simple include log for sa-mp server.
 			Logs("logs/admin.log", string);
 		}
     return 1;
-}```
+}
+```
