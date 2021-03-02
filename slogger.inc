@@ -1,6 +1,6 @@
 /*
 		Simple record log with slogger
-*	Author = https://github.com/azizshinsuke/
+*	Author = https://github.com/phoenixx14/
 *	Date = 28/02/2021
 */
 /*
