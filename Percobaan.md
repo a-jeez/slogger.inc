@@ -1,7 +1,5 @@
-## Tester
-Oke ini tester nya
-
-<VersionWarn name='callback' version='SA-MP 0.3.7' />
+## Deskripsi
+Callback ini dipanggil ketika aku merindukanmu
 
 | Name    | Description    |
 | ------- | -------------- |
