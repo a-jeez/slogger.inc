@@ -1,9 +1,10 @@
 # slogger.inc
-Simple include log for sa-mp server.
+Simple include log for sa-mp server. The result will be saved on */scriptfiles/logs/* folder. 
+
 ## Features
----------------------------------
 * Recorded logs
 * Remove Logs
+  
 ## Example
 ---------------------------------
 ```php
@@ -17,7 +18,7 @@ CMD:givemoney(playerid, params[])
 		{
 			GivePlayerCash(giveplayerid, money);
 			format(string, sizeof(string), "%s has given %s $%d", GetPlayerName(playerid), GetPlayerName(giveplayerid),money);
-			Logs("logs/admin.log", string);
+			Log_Write("logs/admin.log", string);
 		}
     return 1;
 }
