@@ -1,6 +1,6 @@
 /*
 		Simple record log with slogger
-*	Author = https://github.com/phoenixx14/
+*	Author = https://github.com/a-jeez/
 *	Date = 28/02/2021
 */
 /*
@@ -35,7 +35,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #endif
 #define slogger_inc
 
-stock Logs(filename[], input[]) {
+stock Log_Write(filename[], input[]) {
 
 	new	log_output[256], dateTime[2][3], File: fileHandle = fopen(filename, io_append);
 	gettime(dateTime[0][0], dateTime[0][1], dateTime[0][2]);
@@ -45,11 +45,11 @@ stock Logs(filename[], input[]) {
 	return fclose(fileHandle);
 }
 
-stock LogsExists(filename[]) {
+stock Log_Exists(filename[]) {
 	return fexist(filename[]);
 }
 
-stock LogsRemove(filename[]) {
+stock Log_Remove(filename[]) {
 	if(!LogsExists(filename)) return false;
 	fremove(filename[]);
 }
